@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+
+    .container{
+      width:350px ;
+      height: 460px;
+      border: 5px solid rgb(66, 66, 65);
+      margin: 100px auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    #calculator{
+      height: 55px;
+      width: 307px;
+      margin:20px;
+      background: rgb(149, 149, 149);
+      font-size: 30px;
+      text-align: right;
+    
+
+    }
+
+    input[type=button]{
+     width: 65px;
+     height:60px;
+      margin: 5px;
+      font-size: 25px;
+    }
+    input[type=button]:hover{
+      cursor: pointer;
+   
+    }
+    
+  .x{
+
+    position: relative;
+    left: 19px;
+    border: 2px solid rgb(58, 57, 57);
+    width: 90%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+ 
+  #equals{
+    position: relative;
+    left: 62px;
+    width: 170px;
+    background:#484747;
+    color: white;
+    font-size: 35px;
+  }
+  .operator{
+    background: rgb(75, 75, 75);
+   font-weight: bold;
+   color: white;
+  }
+
+  #clear{
+    background-color: lightcoral;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form>
+    <input type="text" id="calculator" name="screen">
+
+     <div class="x">
+      <input type = "button" value = "+" class="operator" onclick = "screen.value += '+' ">
+      <input type = "button" value = "1" onclick = "screen.value += '1' ">
+      <input type = "button" value = "2" onclick = "screen.value += '2' ">
+      <input type = "button" value = "3" onclick = "screen.value += '3' ">
+      <br>
+
+      <input type = "button" value = "-" class="operator" onclick = "screen.value += '-' ">
+      <input type = "button" value = "4" onclick = "screen.value += '4' ">
+      <input type = "button" value = "5" onclick = "screen.value += '5' ">
+      <input type = "button" value = "6" onclick = "screen.value += '6' ">
+      <br>
+
+      <input type = "button" value = "*" class="operator" onclick = "screen.value += '*' ">
+      <input type = "button" value = "7" onclick = "screen.value += '7' ">
+      <input type = "button" value = "8" onclick = "screen.value += '8' ">
+      <input type = "button" value = "9" onclick = "screen.value += '9' ">
+      <br>
+
+      <input type = "button" value = "/" class="operator" onclick = "screen.value += '/' ">
+      <input type = "button" value = "0" onclick = "screen.value += '0' ">
+      <input type = "button" value = "." onclick = "screen.value += '.' ">
+      <input type = "button" value = "C" onclick = "screen.value = ' ' " id= "clear" >
+
+      <input type = "button" value = "=" id="equals" onclick = "screen.value = eval(screen.value) ">
+  <br> 
+</div>
+      </div>
+    </form>
+    </div>
+
+  
+</body>
+</html>   
